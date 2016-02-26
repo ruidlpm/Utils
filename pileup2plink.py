@@ -1,6 +1,6 @@
 #!/bin/python
-Author: Rui Martiniano
-Date:25/08/2015
+# Author: Rui Martiniano
+# Date:25/08/2015
 """
 usage: pileup2plink.py [-i] <input.pileup> [-d] <dataset.bim> [-q] <quality> [-o] <prefix> [-h]
 

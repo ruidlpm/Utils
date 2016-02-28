@@ -13,7 +13,7 @@ Usage:
 ./make_table_and_interval_list.sh <dataset.bim>
 
 Example:
-./make_table_and_interval_list.sh ire_brit_nl_filt.bim 
+./make_table_and_interval_list.sh 1KG.bim 
 
 ```
  
@@ -24,8 +24,8 @@ Usage:
 ./run_pileup.sh <bam.list> <interval_list> <table> <output_folder>
 
 Example:
-./run_pileup.sh bam.list ~/Hellenthal_dataset/Hellenthal_b37.interval_list \
-/home/rui//Hellenthal_dataset/hellenthal.table
+./run_pileup.sh bam.list ~/Hellenthal_dataset/1KG.interval_list \
+/home/rui//Hellenthal_dataset/1KG.table
 ```
 
 

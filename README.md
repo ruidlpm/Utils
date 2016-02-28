@@ -24,8 +24,7 @@ Usage:
 ./run_pileup.sh <bam.list> <interval_list> <table> <output_folder>
 
 Example:
-./run_pileup.sh bam.list ~/Hellenthal_dataset/1KG.interval_list \
-/home/rui//Hellenthal_dataset/1KG.table
+./run_pileup.sh bam.list 1KG.interval_list 1KG.table
 ```
 
 

@@ -2,6 +2,7 @@
 #
 # Rui Martiniano 12/2015
 #
+# filter_vcf_GP.py - Filters VCF according to specified Genotype probability threshold
 # usage:
 # filter_vcf_GP.py [-h] [-i VCF_INPUT] [-o VCF_OUTPUT] [-t GENOTYPE_PROBABILITY_THRESHOLD]
 # #example usage

@@ -6,6 +6,7 @@
 Rui Martiniano (2016)
 
 
+
  - **make_table_and_interval_list.sh** - *makes GATK .table and .interval_list files from .bim file*
  
 ```
@@ -17,6 +18,7 @@ Example:
 
 ```
  
+
   
  - **run_pileup.py** - *Takes indexed bam files, runs GATK's pileup*
 ```
@@ -40,3 +42,27 @@ pileup2plink -i in.pileup -d genotype_dataset -q 30 -o out
 
 ```
 
+
+
+- **filter_vcf_deamination.py** - *Removes potential deamination from vcf file*
+```
+Usage:
+
+filter_vcf_deamination.py [-h] [-i VCF_INPUT] [-o VCF_OUTPUT]
+
+Example:
+python filter_vcf_deamination.py -i test.vcf -o test_out.vcf
+
+```
+
+
+
+- **filter_vcf_GP.py** - *Filters VCF by Genotype probability threshold*
+```
+Usage:
+filter_vcf_GP.py [-h] [-i VCF_INPUT] [-o VCF_OUTPUT] [-t GENOTYPE_PROBABILITY_THRESHOLD]
+
+Example:
+python filter_vcf_GP.py -i chr1.1.out.vcf -o test.out -t 0.90
+
+```

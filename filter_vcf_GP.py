@@ -1,4 +1,12 @@
 #!/bin/python
+#
+# Rui Martiniano 12/2015
+#
+# usage:
+# filter_vcf_GP.py [-h] [-i VCF_INPUT] [-o VCF_OUTPUT] [-t GENOTYPE_PROBABILITY_THRESHOLD]
+# #example usage
+# python filter_vcf_GP.py -i chr1.1.out.vcf -o test.out -t 0.90
+
 
 from __future__ import print_function
 import argparse
@@ -6,10 +14,6 @@ import sys
 import time
 
 parser = argparse.ArgumentParser(description="Filters phased genotypes with genotype probability lower than the threshold provided. It also replaces triallelic genotypes with ./. ")
-
-
-#example usage
-#python filter_vcf_GP.py -i chr1.1.out.vcf -o test.out -t 0.90
 
 
 #add options to argparser

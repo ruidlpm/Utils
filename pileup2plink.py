@@ -1,8 +1,19 @@
-#!/bin/python
-# Author: Rui Martiniano
-# Date:25/08/2015
+#!/bin/python2.7
+
+import argparse
+import sys
+import getopt
+import random
+import re
+import time
+
+
 """
-usage: pileup2plink.py [-i] <input.pileup> [-d] <dataset.bim> [-q] <quality> [-o] <prefix> [-h]
+Author: Rui Martiniano
+Date:25/08/2015
+Description: converts GATK pileup to plink format
+
+usage: pileup2plink.py [-i] <input.GATK.pileup> [-d] <dataset.bim> [-q] <quality> [-o] <prefix> [-h]
 
 Filters input file (pileup format) and converts it to plink format files (ped and map)
 
@@ -27,14 +38,6 @@ ls *rescaled.pileup | cut -f1 -d'.' | while read i; do python pileup2plink.py -i
 takes 5 sec. each file.
 """
 
-
-
-import argparse
-import sys
-import getopt
-import random
-import re
-import time
 
 parser = argparse.ArgumentParser(description='Converts pileup format files into homozygous plink format files for an individual sample.')
 

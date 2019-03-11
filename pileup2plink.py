@@ -63,7 +63,7 @@ quality=options.quality
 outped=outprefix + '.final.ped'
 outmap=outprefix + '.final.map'
 triallelic_snps_outfile=outprefix + '.txt'
-sample_name=pileup_file.split('.')[0]
+sample_name=outprefix
 
 
 #read pileup into list

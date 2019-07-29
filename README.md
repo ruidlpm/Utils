@@ -2,8 +2,13 @@
 
 ###Scripts for processing vcf or pileup files
 
+ - **vcf2fasta.py** - *converts vcf to fasta*
+ 
+```
+Usage:
+vcf2fasta.py [-h] [-i INPUT_VCF] [-o OUTPUT_FASTA]
+```
 
-Rui Martiniano (2016)
 
 
 

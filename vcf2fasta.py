@@ -20,6 +20,8 @@ if options.input_vcf is None or options.output_fasta is None:
 vcf=options.input_vcf
 out_fasta=options.output_fasta
 
+nucleotides=['A','T','C','G','N']
+
 
 def get_vcf_header(vcf):
     '''reads VCF until it finds the header line and returns it'''
@@ -64,7 +66,7 @@ def get_bases_from_ind(vcf_row, indiv_index):
                 base=ALT
             elif geno=='.' or geno=='N':
                 base='N'
-            else:
+            elif base not in nucleotides:
                 base='N'
                 print('fix ' + geno)
     else:
@@ -74,7 +76,6 @@ def get_bases_from_ind(vcf_row, indiv_index):
 
 open(out_fasta, 'w').close()
 
-nucleotides=['A','T','C','G','N']
 
 vcf_header=get_vcf_header(vcf)
 
